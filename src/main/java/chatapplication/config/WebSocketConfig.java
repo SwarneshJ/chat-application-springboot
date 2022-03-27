@@ -15,7 +15,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
         // SockJS is used to enable fallback options for browsers that don’t support websocket.
         // STOMP stands for Simple Text Oriented Messaging Protocol.
         // It is a messaging protocol that defines the format and rules for data exchange.
-        registry.addEndpoint("/ws").withSockJS();
+        registry.addEndpoint("/websocket").withSockJS();
     }
 
     @Override
